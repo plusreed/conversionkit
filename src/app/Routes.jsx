@@ -7,7 +7,7 @@ const NotFound = React.lazy(() => import('./pages/404'));
 
 const Routes = () => (
     <Suspense fallback={<h1>Loading</h1>}>
-        <Router>
+        <Router basename={process.env.NODE_ENV === 'production' ? '/bintool' : ''}>
             <Switch>
                 <Route path="/" exact component={Index} />
                 <Route path="/why-use" exact component={WhyUse} />
