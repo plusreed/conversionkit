@@ -29,7 +29,7 @@ export default class DecimalConverter extends Component {
                         className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                         type="text"
                         placeholder="Binary here..."
-                        value={this.state.decimal || ""}
+                        value={this.state.decimal}
                         onChange={this.convertToDecimal}
                     />
                 </form>
