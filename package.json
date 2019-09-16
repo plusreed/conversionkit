@@ -1,7 +1,8 @@
 {
   "name": "convert-to-binary",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "homepage": "https://sandbox.plusreed.com/bintool",
   "dependencies": {
     "react": "^16.9.0",
