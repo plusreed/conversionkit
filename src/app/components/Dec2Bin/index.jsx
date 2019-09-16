@@ -6,8 +6,8 @@ export default class BinaryConverter extends Component {
         super();
 
         this.state = {
-            number: null,
-            binaryRepresentation: null,
+            number: "",
+            binaryRepresentation: "",
         };
 
         this.convertToBinary = this.convertToBinary.bind(this);
@@ -22,14 +22,14 @@ export default class BinaryConverter extends Component {
 
     render() {
         return (
-            <div class="p-4">
-                <p class="text-sm mb-2 text-gray-600">Binary representation of {this.state.number === null || isNaN(this.state.number) ? 'Nothing' : this.state.number} is: {this.state.binaryRepresentation === null || this.state.binaryRepresentation <= -1 ? 'Nothing' : this.state.binaryRepresentation}</p>
+            <div className="p-4">
+                <p className="text-sm mb-2 text-gray-600">Binary representation of {this.state.number === "" || isNaN(this.state.number) ? 'Nothing' : this.state.number} is: {this.state.binaryRepresentation === "" || this.state.binaryRepresentation <= -1 ? 'Nothing' : this.state.binaryRepresentation}</p>
                 <form>
                     <input
-                        class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                         type="number"
                         placeholder="Decimal here..."
-                        value={this.state.number}
+                        value={this.state.number || ""}
                         onChange={this.convertToBinary}
                     />
                 </form>
