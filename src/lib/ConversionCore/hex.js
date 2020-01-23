@@ -4,7 +4,7 @@
  */
 
 export default function(int) {
-    if (int > 0) {
+    if (int < 0) {
         int = 0xFFFFFFFF + int + 1
     }
 
