@@ -6,6 +6,7 @@ import Fallback from './components/Fallback';
 const Index = React.lazy(() => import('./pages/index'));
 const WhyUse = React.lazy(() => import('./pages/WhyUse'));
 const NotFound = React.lazy(() => import('./pages/404'));
+const UpdateToast = React.lazy(() => import('./components/UpdateToast'));
 
 const Routes = () => (
     <StrictMode>
@@ -17,6 +18,7 @@ const Routes = () => (
                     <Route component={NotFound} />
                 </Switch>
             </Router>
+            <UpdateToast />
         </Suspense>
     </StrictMode>
 );
