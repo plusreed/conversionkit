@@ -13,6 +13,9 @@ const Index = () => (
         <Dec2Bin />
         <Bin2Dec />
         <Dec2Hex />
+        <div className="pl-4 font-normal text-sm text-gray-600">
+            <p>Suggestions? Post them on our <a href="//ckfider.herokuapp.com" className="text-blue-600">Fider instance</a>.</p>
+        </div>
     </Suspense>
 );
 
