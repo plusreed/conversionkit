@@ -1,5 +1,5 @@
 import React from 'react';
-import faqs from '../data/faq';
+import faqs from 'app/data/faq';
 
 const WhyUse = () => (
     <div className="p-4">

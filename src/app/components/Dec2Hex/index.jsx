@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { hex } from '../../../lib/ConversionCore';
+import { hex } from 'ConversionCore/';
 
 export default class Dec2Hex extends Component {
     constructor() {

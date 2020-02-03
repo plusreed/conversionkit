@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
 
-import Fallback from '../components/Fallback';
+import Fallback from 'app/components/Fallback';
 
-const Header = React.lazy(() => import('../components/Header'));
-const Dec2Bin = React.lazy(() => import('../components/Dec2Bin'));
-const Bin2Dec = React.lazy(() => import('../components/Bin2Dec'));
-const Dec2Hex = React.lazy(() => import('../components/Dec2Hex'));
+const Header = React.lazy(() => import('app/components/Header'));
+const Dec2Bin = React.lazy(() => import('app/components/Dec2Bin'));
+const Bin2Dec = React.lazy(() => import('app/components/Bin2Dec'));
+const Dec2Hex = React.lazy(() => import('app/components/Dec2Hex'));
 
 const Index = () => (
     <Suspense fallback={<Fallback text={"Waiting for ConversionCore interfaces..."} />}>

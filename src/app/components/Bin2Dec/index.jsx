@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { decimal } from '../../../lib/ConversionCore';
+import { decimal } from 'ConversionCore';
 
 export default class DecimalConverter extends Component {
     constructor() {

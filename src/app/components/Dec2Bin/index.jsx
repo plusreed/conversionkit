@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { binary } from '../../../lib/ConversionCore';
+import { binary } from 'ConversionCore/';
 
 export default class BinaryConverter extends Component {
     constructor() {

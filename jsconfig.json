@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+            "ConversionCore/*": ["./src/lib/ConversionCore/*"],
+            "LSWrapper/*": ["./src/lib/LSWrapper/*"]
+        }
+    }   
+}
