@@ -3,7 +3,8 @@
         "baseUrl": "./src/",
         "paths": {
             "ConversionCore/*": ["./src/lib/ConversionCore/*"],
-            "LSWrapper/*": ["./src/lib/LSWrapper/*"]
+            "LSWrapper/*": ["./src/lib/LSWrapper/*"],
+            "app/*": ["./src/app/*"]
         }
     }   
 }
