@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './twbuild.css';
 import Routes from './app/Routes';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<Routes />, document.getElementById('root'));
 
