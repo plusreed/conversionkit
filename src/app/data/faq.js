@@ -7,5 +7,9 @@ export default [
         id: 2,
         question: "How does this website work offline?",
         answer: "Magic. (In all seriousness, it's just a service worker. Everything is done in your browser and isn't sent off to a server.)"
+    }, {
+        id: 3,
+        question: "Is ConversionKit open source?",
+        answer: "Yes! Please visit <a href=\"https://github.com/plusreed/conversionkit\">https://github.com/plusreed/conversionkit</a> to see the source code."
     }
 ];
