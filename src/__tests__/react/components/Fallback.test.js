@@ -8,8 +8,6 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-/** @todo: This needs a test for the `text` prop. */
-
 it('renders text correctly', () => {
   const div = document.createElement('div')
   ReactDOM.render(<Fallback text={"test"} />, div);
