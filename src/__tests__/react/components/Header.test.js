@@ -7,3 +7,9 @@ it('renders without crashing', () => {
   ReactDOM.render(<Header />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it('contains text when text prop is passed', () => {
+  const div = document.createElement('div')
+  ReactDOM.render(<Header text={"hey"} />, div)
+  expect(div.innerHTML).toMatch(/hey/)
+})
