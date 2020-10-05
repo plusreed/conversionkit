@@ -5,8 +5,8 @@ const WhyUse = () => (
     <div className="p-4">
         {faqs.map(faq => (
             <div key={faq.id}>
-                <h1 className="font-bold text-2xl">{faq.question}</h1>
-                <p className="font-normal text-md">{faq.answer}</p>
+                <h1 className="font-bold text-2xl" dangerouslySetInnerHTML={{ __html: faq.question }} />
+                <p className="font-normal text-md" dangerouslySetInnerHTML={{ __html: faq.answer }} />
             </div>
         ))}
     </div>
