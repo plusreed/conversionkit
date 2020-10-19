@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="p-4"
+>
+  <p
+    className="text-sm mb-2 text-gray-600"
+  >
+    Binary representation of 
+    Nothing
+     is: 
+    Nothing
+  </p>
+  <form>
+    <input
+      className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+      onChange={[Function]}
+      placeholder="Decimal here..."
+      type="number"
+      value=""
+    />
+  </form>
+</div>
+`;

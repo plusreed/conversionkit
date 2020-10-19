@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="p-2 mx-auto text-center bg-gray-900 w-auto"
+>
+  <h1
+    className="font-bold text-xl text-gray-100"
+  >
+    Waiting for ConversionCore interfaces...
+  </h1>
+</div>
+`;

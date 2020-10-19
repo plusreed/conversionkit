@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer'
 import Index from '../../../app/pages';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Index />, div);
-  ReactDOM.unmountComponentAtNode(div);
+it('matches snapshot', () => {
+  const tree = renderer
+    .create(<Index />)
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
 });

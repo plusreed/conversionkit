@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="p-4"
+>
+  <div>
+    <h1
+      className="font-bold text-2xl"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Why should I use ConversionKit?",
+        }
+      }
+    />
+    <p
+      className="font-normal text-md"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "ConversionKit is free and open source, works offline, and requires no account to use. We also don't track what you do.",
+        }
+      }
+    />
+  </div>
+  <div>
+    <h1
+      className="font-bold text-2xl"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "How does this website work offline?",
+        }
+      }
+    />
+    <p
+      className="font-normal text-md"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Magic. (In all seriousness, it's just a service worker. Everything is done in your browser and isn't sent off to a server.)",
+        }
+      }
+    />
+  </div>
+  <div>
+    <h1
+      className="font-bold text-2xl"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Is ConversionKit open source?",
+        }
+      }
+    />
+    <p
+      className="font-normal text-md"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Yes! Please visit <a href=\\"https://github.com/plusreed/conversionkit\\">https://github.com/plusreed/conversionkit</a> to see the source code.",
+        }
+      }
+    />
+  </div>
+</div>
+`;

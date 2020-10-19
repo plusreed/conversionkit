@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer'
 import Fallback from '../../../app/components/Fallback';
 
 it('renders without crashing', () => {
@@ -21,3 +22,19 @@ it('displays a spinner when no text is provided', () => {
   // this is the best way i know to check if it's working properly.
   expect(div.innerHTML).toMatch(/sr-only/)
 })
+
+it('matches snapshot when no text is provided', () => {
+  const tree = renderer
+    .create(<Fallback />)
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+});
+
+it('matches snapshot when text is provided', () => {
+  const tree = renderer
+    .create(<Fallback text={"test"} />)
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+});
