@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when no text is provided 1`] = `
+<div
+  className="p-2 mx-auto text-center bg-gray-900 w-auto"
+>
+  <h1
+    className="font-bold text-xl text-gray-100"
+  >
+    <div
+      className="spinner-border"
+      role="status"
+    >
+      <span
+        className="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </h1>
+</div>
+`;
+
+exports[`matches snapshot when text is provided 1`] = `
+<div
+  className="p-2 mx-auto text-center bg-gray-900 w-auto"
+>
+  <h1
+    className="font-bold text-xl text-gray-100"
+  >
+    test
+  </h1>
+</div>
+`;
